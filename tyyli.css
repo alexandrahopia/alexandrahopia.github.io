@@ -1,0 +1,109 @@
+body {
+    width: 90%;
+    margin: auto; 
+    color: black;
+    font-size: larger;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  header, footer, body, main, h2, h3, h4, h5 {
+    text-align: center;
+  }
+  
+  body, header, footer, main {
+    margin: 20px;
+  }
+  
+  #logokuva {
+    width: 90%;
+    vertical-align: middle;
+  }
+  
+  #topnav li {
+    display: inline-block;
+    margin: 0px 4px;
+  }
+  
+  #topnav a {
+    color: black;
+    background-color: blanchedalmond;
+    padding: 5px;
+    border-left: 2px black solid;
+    margin-left: 2px;
+    text-decoration: black;
+  }
+  
+  .flex_container {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .flex_item {
+    flex: 1 1 auto; 
+    background-color: white;
+    padding: 10px;
+    border: 10px solid blanchedalmond; 
+    margin: 10px; 
+  }
+  
+  h2 {
+    color: black;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  ul {
+    list-style-type: none; 
+    padding: 0; 
+    text-align: center; 
+  }
+  
+  .henkilokuva, .cheerleading, .kuva_contact, .kuva_newsec, .kuva_newsec2 {
+    width: 50%; 
+    vertical-align: middle;
+  }
+  
+  .bold-text {
+  font-weight: bold;
+  margin-bottom: 0;
+  }
+
+  .job-description p {
+    margin-top: 0;
+  }
+
+  /*mobiili*/
+  @media only screen and (max-width: 430px) {
+    #topnav li {
+      display: block;
+      text-align: left;
+    }
+    #header { 
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    #topnav a {
+      font-size: 1.3em;
+    }
+  }
+  
+  /*keskikokoiset*/
+  @media only screen and (min-width: 431px) {
+    .flex_container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .flex_item {
+      flex: 1 1 auto;
+    }
+  }
+  
+  /*isot näytöt*/
+  @media only screen and (min-width: 1024px) {
+    body {
+      max-width: 1024px;
+      border: white 2px solid; 
+      margin: auto;
+    }
+  }
